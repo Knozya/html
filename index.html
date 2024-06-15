@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>你就摆吧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            animation: shake 0.5s infinite;
+        }
+        p {
+            font-size: 18px;
+            transform: rotate(3deg);
+            animation: color-change 1s infinite alternate,shake 0.5s infinite;;
+        }
+        p1 {
+            font-size: 18px;
+            transform: rotate(3deg);
+            animation: color-change 7s infinite alternate,shake 0.2s infinite;
+        }
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(3deg); }
+            50% { transform: rotate(-3deg); }
+            75% { transform: rotate(2deg); }
+            100% { transform: rotate(0deg); }
+        }
+        @keyframes color-change {
+            0% { color: #ff0000; }
+            50% { color: #00ff00; }
+            100% { color: #0000ff; }
+        }
+    </style>
+</head>
+<body>
+    <h1>还他妈玩,还犯困,几天考试了你不知道？</h1>
+    <p>知难而退的fw,保险学背完了吗,微观经济学背完了吗,py看了吗,高数都会了？</p>
+    <div id="countdown"></div>
+    <script>
+        var count = 10;
+        var countdown = document.getElementById("countdown");
+        var counter = setInterval(function() {
+            countdown.innerHTML = "倒计时：" + count;
+            count--;
+            if (count < 0) {
+                clearInterval(counter);
+                countdown.innerHTML = "还他妈在这看是吧,赶紧滚去复习！";
+            }
+        }, 1000);
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p1>我错了爹我不是故意的</p1>
+</body>
+</html> 
+    </style>
+</head>
+</html>
